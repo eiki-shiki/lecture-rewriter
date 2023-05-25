@@ -1,0 +1,12 @@
+/idea/*
+/venv/*
+/.vscode/*
+/test/*
+
+__pycache__/*
+
+/src/assets/fonts/*.pkl
+
+/test.py
+
+/templates/*
