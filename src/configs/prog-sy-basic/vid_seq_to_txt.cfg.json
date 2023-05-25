@@ -1,0 +1,5 @@
+{
+    "configs": ["teams-basic"],
+    "crop_tess": [1470, 853, 0, 0],
+    "max_text_difference_ratio": 0.90
+}

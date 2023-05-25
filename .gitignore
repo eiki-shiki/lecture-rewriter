@@ -3,10 +3,12 @@
 /.vscode/*
 /test/*
 
-__pycache__/*
+*/__pycache__/*
 
-/src/assets/fonts/*.pkl
+/src/assets/fonts/*/*.pkl
 
 /test.py
 
 /templates/*
+
+/cfg/*

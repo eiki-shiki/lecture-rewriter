@@ -1,0 +1,5 @@
+{
+    "configs": ["teams-basic"],
+    "add_volume_before": 2,
+    "add_volume": 4
+}
