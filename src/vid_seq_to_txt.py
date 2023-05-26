@@ -128,7 +128,7 @@ def VidSeqToTxt(path):
     cap.set(cv2.CAP_PROP_POS_MSEC, i)
     file_index = 1
     if (os.path.isfile(os.path.join(folder, CFG.vid_seq_to_txt_save_file))):
-        with open(os.path.isfile(os.path.join(folder, CFG.vid_seq_to_txt_save_file)), 'r') as f_save:
+        with open(os.path.join(folder, CFG.vid_seq_to_txt_save_file), 'r') as f_save:
             json_save = json.load(f_save)
             i = json_save["i"]
             json_cfg_i = json_save["json_cfg_i"]

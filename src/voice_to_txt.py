@@ -126,7 +126,7 @@ def VoiceToTxt(path):
             #json_cfg = SortCFGJSONByTime(json.load(cfg_f)) # Is this really necessary?
             json_cfg = json.load(cfg_f)
     if (os.path.isfile(os.path.join(folder, CFG.voice_to_txt_save_file))):
-        with open(os.path.isfile(os.path.join(folder, CFG.voice_to_txt_save_file)), 'r') as f_save:
+        with open(os.path.join(folder, CFG.voice_to_txt_save_file), 'r') as f_save:
             json_save = json.load(f_save)
             timecodes = json_save["timecodes"]
             i = json_save["i"]
