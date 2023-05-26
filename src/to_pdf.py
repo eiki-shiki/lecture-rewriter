@@ -73,8 +73,13 @@ def ToPdf(path):
         folder = GetFolderPath(os.path.join(path, p))
         TryToCreateFolder(folder)
         if (not os.path.isfile(os.path.join(folder, CFG.summary_json_file))):
-            print(os.path.join(folder, CFG.summary_json_file), "not found. Can't create pdf.", "Skipping...")
+            print(os.path.join(folder, CFG.summary_json_file), "not found.", "Skipping...")
             paths.remove(p)
+    
+    if (len(p) == 0):
+        print("All", CFG.summary_json_file, "are not found. Can't create pdf.")
+        return
+    
     pdf = CustomPDF()
 
     #pdf.add_font("FreeMono", '', CFG.PATH.free_mono_font, True)
