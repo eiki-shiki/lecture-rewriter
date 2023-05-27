@@ -1,5 +1,6 @@
 import os
 import json
+import stat
 # import pkgutil
 
 from .config import always_replace_voice_dict
@@ -17,6 +18,7 @@ def TryCatchSafe(default, exception, func, *args, **kwargs):
 def TryToCreateFolder(path):
     if not os.path.isdir(path):
         os.mkdir(path)
+        os.chmod(path, stat.S_IWRITE)
 
 def GetFolderPath(path):
     return os.path.splitext(path)[0]
